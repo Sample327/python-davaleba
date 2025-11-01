@@ -35,9 +35,11 @@ minutes = int(input("sheiyvanet wutebi: "))
 
 hours = minutes / 60
 
-print(minutes,"wuti aris", hours, "saati")
+print(minutes,"wuti aris", round(hours, 2), "saati")
 
 print("------------------------------")
+
+# P.S qartulad specialurad davwere ufro saxaliso chanda gaketeba ;dd
 
 
 
