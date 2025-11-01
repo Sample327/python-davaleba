@@ -1,3 +1,4 @@
+print("------------------------------")
 name = "Tornike"
 
 age = 25
@@ -13,13 +14,13 @@ if have_coded_before:
 else:
     print("no i didnot")
 
-
+print("------------------------------")
 num1 = int(input("sheiyvanet ricxvi: "))
 num2 = int(input("sheiyvanet meore ricxvi: "))
 
 
-print("-----------")
-print("sheyvanili ricxvebi:", num1 ,num2)
+print("------------------------------")
+print(f"sheyvanili ricxvebi: {num1} , {num2}")
 print("jami", num1 + num2)
 print("sxvaoba", num1 - num2)
 print("namravli", num1 * num2)
@@ -27,4 +28,18 @@ print("ganayofi", num1 / num2)
 print("metoba", num1 > num2)
 print("nakleboba", num1 < num2)
 print("toloba", num1 == num2)
-print("-----------")
+print("------------------------------")
+
+
+minutes = int(input("sheiyvanet wutebi: "))
+
+hours = minutes / 60
+
+print(minutes,"wuti aris", hours, "saati")
+
+print("------------------------------")
+
+
+
+
+
