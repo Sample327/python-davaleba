@@ -15,8 +15,11 @@ else:
     print("no i didnot")
 
 print("------------------------------")
-num1 = int(input("sheiyvanet ricxvi: "))
-num2 = int(input("sheiyvanet meore ricxvi: "))
+try:
+    num1 = int(input("sheiyvanet ricxvi: "))
+    num2 = int(input("sheiyvanet meore ricxvi: "))
+except ValueError:
+    print("gtxovt sheiyvanot mxolod ricxvi")
 
 
 print("------------------------------")
