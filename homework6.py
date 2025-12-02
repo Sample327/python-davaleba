@@ -1,10 +1,13 @@
 import helpers
 import random
-
+import datetime as dt
 
 def check_balance():
     print("checking balance")
     return random.choice((True, False))
+
+def current_utc():
+    return dt.datetime.now(dt.timezone.utc)
 
 def complete_transaction():
     print("completing transaction ...")
@@ -45,9 +48,11 @@ print(helpers.shift_and_square(5,1))
 
 def safe_place_order(max_attempts=3):
     attempts = 0
+    utc = current_utc()
     while attempts < max_attempts:
         attempts += 1
         print(f"\nattempt {attempts}")
+        print(utc)
         order = place_order()
         if order["status"] == "success":
             print("order succed")
@@ -68,3 +73,4 @@ assert helpers.shift_and_square(3,1) == 16
 print("all tests succed")
 
 # timestumpis logic ver mivxvdi yvela jerze rogor unda meqna
+
